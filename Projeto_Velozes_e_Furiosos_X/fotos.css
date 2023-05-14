@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+.fotos-pai {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-filho {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #00000000;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border: 5px solid #d21617;
+
+}
+
+.banner-1 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_02.png?id=new');
+}
+
+.banner-2 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_04.png?id=new');
+}
+
+.banner-3 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_05.png?id=new');
+}
+
+.banner-4 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_08.png?id=new');
+}
+
+.banner-5 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_09.png?id=new');
+}
+
+.banner-6 {
+    background-image: url('https://www.fastxmovie.com/images/gallery/fast_x/gallery_view_1200x600_01.png?id=new');
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fotos-filho {
+        grid-template-columns: 1fr;
+        margin-top: 15px;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+}
